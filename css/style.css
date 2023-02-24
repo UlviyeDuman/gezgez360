@@ -369,12 +369,15 @@ p{
 
     .header_nav.blog{
         height: 75vh;
-        background: url('../img/3dtur.jpg') no-repeat;
+        /* background:url('../img/blog.jpg') no-repeat; */
+        background-image:url(../img/Blog-kapak.jpg);
+        width: 100vw;
+        height: 100vh;
+        background-repeat: no-repeat;
         background-size:cover;
         background-position: center;
         opacity: rgba(0, 0, 0, 0.1);
     }
-
     .header_nav::before {
         position: absolute;
         top: 0;
@@ -394,6 +397,9 @@ p{
     .article  {
         margin-top: 1.5rem;
         color: var(--colors7);
+    }
+    .article p {
+        font-size: 20px;
     }
     .flex-columns.flex-reverse .row {
     flex-direction: row-reverse;
