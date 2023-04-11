@@ -10,33 +10,14 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/8929bbe74a.js" crossorigin="anonymous"></script>
     <title>Gezgez360..comsss</title>
+    <style>
+        
+    </style>
 
 </head>
 <body id="body">
-    <!-- Başlık -->
-    <header id="header" class="header_nav blog">
-        <div class="container">
-            <nav class="navbar">
-                <div class="box"></div>
-                <img src="img/logo.png" alt="" class="_logo">
-                <ul class="navbar-list">
-                    <li><a href="index.html#header">Anasayfa</a></li>
-                    <li><a href="index.html#about">Hakkımızda</a></li>
-                    <li><a href="#blogs">Hizmetler</a></li>
-                    <li><a href="index.html#contact">İletişim</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-
-
-    
-    <!-- Ana Bölüm -->
     <main>
-        <!-- articles -->
         <section class="articles">
-             <!-- about -->
             <article  class="article flex-columns">
                 <div class="row">
                     <div class="column">
@@ -115,25 +96,71 @@
 
         </section>
     </main>
-
-
-
-    <footer class="footer bg-light">
-        <div class="social">
-            <a href="https://www.instagram.com/guraydumanphotography/" target="_blank">
-                <i class="fab fa-square-instagram fa-2x"></i>
-            </a>
-            <a href="https://www.facebook.com/guraydumanphoto/" target="_blank">
-                <i class="fab fa-facebook fa-2x"></i>
-            </a>
-            <a href="https://wa.me/5544249024" target="_blank">
-                <i class="fab fa-square-whatsapp fa-2x"></i>
-            </a>
-        </div>
-        <p>Copyright © 2023 | Gezgez360 Virtual Tour | Tüm Haklar Saklıdır.</p>
-    </footer>
-    <a href="#body" id="backtotop">
-        <i class="fas fa-chevron-circle-up"></i>
-    </a> 
 </body>
 </html>
+
+
+
+
+
+.header_nav.blog{
+    height: 75vh;
+    background:url('../img/kapak-blog.jpeg') no-repeat;
+    background-size:cover;
+    background-position: center;
+    opacity: rgba(0, 0, 0, 0.1);
+    }
+.header_nav::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    }
+
+    main{
+        background-color: var(--colors7);
+       }
+   .articles {padding: 3rem 5rem;}
+   .article  {
+       margin-top: 1.5rem;
+       color: var(--colors7);
+       }
+   .article p {font-size: 20px;}
+   .flex-columns.flex-reverse .row {flex-direction: row-reverse;}
+   .flex-columns .row {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       width: 100%;}
+   .flex-columns .column {flex: 1;}
+   .flex-columns.article .column:nth-child(odd) {flex: 2;}
+   .flex-columns.article .column:nth-child(even) {flex: 3;}
+   .flex-columns .column .column-1,
+   .flex-columns .column .column-2 {height: 100%;}
+   .flex-columns .column-2{
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       justify-content: center;
+       padding: 3rem;
+       }
+   .flex-columns img{
+       width: 100%;
+       height: 100%;
+       }
+       .footer .social a { margin-right: 10px;}
+#backtotop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    }
+#backtotop i {
+    color: var(--colors6);
+    font-size: 45px;
+    transition: color .6s;
+    }
+#backtotop i:hover {
+    color:#E4DCCF;
+    }
